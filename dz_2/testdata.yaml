@@ -2,8 +2,8 @@ address: https://test-stand.gb.ru
 browser: chrome
 sleep_time: 2
 
-login: serg_t
-pswd: cb7131accd
+login: vlad_d
+pswd: b1b27ba7f4
 
 title: Selenium WebDriver
 description: Selenium WebDriver is a programming interface that can be used to create and execute test cases.

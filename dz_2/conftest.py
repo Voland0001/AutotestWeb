@@ -4,10 +4,12 @@ import yaml
 with open("./testdata.yaml") as f:
     testdata = yaml.safe_load(f)
 
+
 ########### add for homework 2 ##############
 @pytest.fixture()
 def add_post_selector():
     return """//*[@id="create-btn"]"""
+
 
 @pytest.fixture()
 def add_title():
@@ -34,9 +36,11 @@ def save_post():
 def check_title():
     return """//*[@id="app"]/main/div/div[1]/h1"""
 
+
 @pytest.fixture()
 def title_name():
     return f"{testdata['title']}"
+
 
 ############ end homework 2 ##############
 
@@ -58,6 +62,7 @@ def x_selector3():
 @pytest.fixture()
 def x_selector4():
     return """//*[@id="app"]/main/nav/ul/li[3]/a"""
+
 
 @pytest.fixture()
 def btn_selector():

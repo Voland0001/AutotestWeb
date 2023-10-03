@@ -10,7 +10,6 @@ site = Site(testdata["address"])
 
 def test_add_post(x_selector1, x_selector2, x_selector4, btn_selector, add_post_selector, add_title, add_description,
                   add_content, save_post, check_title, title_name):
-
     input1 = site.find_element("xpath", x_selector1)
     input1.clear()
     input1.send_keys(testdata["login"])
