@@ -14,7 +14,6 @@ def test_post_create(user_login, get_description):
 
 
 def test_check_post_create(user_login, get_description):
-
     result = S.get(url=data['address'], headers={'X-Auth-Token': user_login}).json()['data']
     # print(result)
     list_description = [i['description'] for i in result]
